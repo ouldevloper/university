@@ -1,0 +1,4342 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calc II - C3: Infinite Sequences & Series
+\end_layout
+
+\begin_layout Section
+Terms to describe 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A set of numbers
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=2n,n=\left\{ 1,2,3,...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=1\left(2^{n-1}\right),N=\left\{ 1,2,3,...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=1\left(-1\right)^{n-1},N=\left\{ 1,2,3,...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{n}{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\left(-1\right)^{n}\left(\frac{n+1}{3^{n}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Definition 3.2: Let 
+\begin_inset Formula $n=1,2,3$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a_{n}\le M$
+\end_inset
+
+, 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+
+\series bold
+bounded above 
+\series default
+by 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ is 
+\series bold
+upper bound
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+and vice versa (
+\begin_inset Formula $a_{n}\ge M$
+\end_inset
+
+, lower bound)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+positive 
+\series default
+if 
+\begin_inset Formula $a_{n}\ge0,\forall n$
+\end_inset
+
+ and vice versa 
+\begin_inset Formula $\left(a_{n}\le0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+increasing
+\series default
+ if 
+\begin_inset Formula $a_{n+1}\ge a_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n$
+\end_inset
+
+, and vice versa 
+\begin_inset Formula $\left(a_{n+1}\le0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+monotonic = 
+\series default
+all increasing/decreasing
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+alternating
+\series default
+ = 
+\begin_inset Formula $a_{n}\cdot a_{n+1}\le0$
+\end_inset
+
+ (consecutive, opposite sign)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+As 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+convergent
+\series default
+ if 
+\begin_inset Formula $\lim_{n\to\infty}$
+\end_inset
+
+ is real number
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+divergent 
+\series default
+if 
+\begin_inset Formula $\lim_{n\to\infty}$
+\end_inset
+
+ is 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Describe the following sequences using the terms in definition above:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ n\right\} =\left\{ 1,2,3,4,5...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Not bounded above
+\end_layout
+
+\begin_layout Enumerate
+Bounded below, Lower bound = 1
+\end_layout
+
+\begin_layout Enumerate
+Not bounded
+\end_layout
+
+\begin_layout Enumerate
+Positive
+\end_layout
+
+\begin_layout Enumerate
+Increasing
+\end_layout
+
+\begin_layout Enumerate
+Monotonic
+\end_layout
+
+\begin_layout Enumerate
+Not alternating
+\end_layout
+
+\begin_layout Enumerate
+Divergent (from 1)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \frac{n-1}{n}\right\} =\left\{ 0,\frac{1}{2},\frac{2}{3},\frac{3}{4}...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Not bounded above
+\end_layout
+
+\begin_layout Enumerate
+Bounded below, Lower bound = 0
+\end_layout
+
+\begin_layout Enumerate
+Not bounded
+\end_layout
+
+\begin_layout Enumerate
+Positive
+\end_layout
+
+\begin_layout Enumerate
+Increasing
+\end_layout
+
+\begin_layout Enumerate
+Monotonic
+\end_layout
+
+\begin_layout Enumerate
+Not alternating
+\end_layout
+
+\begin_layout Enumerate
+Convergent (to 1)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \left(-\frac{1}{2}\right)^{n}\right\} =\left\{ -\frac{1}{2},\frac{1}{4},-\frac{1}{8},\frac{1}{16}...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Bounded above, 
+\begin_inset Formula $\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Bounded below, Lower bound = 
+\begin_inset Formula $-\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Bounded
+\end_layout
+
+\begin_layout Enumerate
+Not increasing / decreasing
+\end_layout
+
+\begin_layout Enumerate
+Not monotonic
+\end_layout
+
+\begin_layout Enumerate
+Alternating
+\end_layout
+
+\begin_layout Enumerate
+Convergent (to 0)
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Convergence and Divergence of Sequences
+\end_layout
+
+\begin_layout Subsection
+Definition
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=L$
+\end_inset
+
+, 
+\series bold
+converges
+\series default
+ (is 
+\series bold
+convergent
+\series default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c3/1.1-converging.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Else if 
+\begin_inset Formula $L$
+\end_inset
+
+ D.N.E.
+ or 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+, it 
+\series bold
+diverges 
+\series default
+(is 
+\series bold
+divergent
+\series default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/c3/1.1-diverging.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}f\left(x\right)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(n\right)=a_{n}$
+\end_inset
+
+, and 
+\begin_inset Formula $n$
+\end_inset
+
+ is an integer, then 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Put it simply (and slightly incorrectly), if the series converges, and 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(\infty\right)$
+\end_inset
+
+ is simply 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Theorem
+\end_layout
+
+\begin_layout Enumerate
+Every bounded & monotonic sequence is 
+\series bold
+convergent
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Laws - Limit Laws for Convergent Sequences:
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+are convergent sequences, and 
+\begin_inset Formula $c$
+\end_inset
+
+ is constant, then:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(a_{n}\pm b_{n}\right)=\lim_{n\to\infty}\left(a_{n}\right)\pm\lim_{n\to\infty}b_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(c\cdot a_{n}\right)=c\lim_{n\to\infty}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}c=c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(a_{n}\cdot b_{n}\right)=\lim_{n\to\infty}\left(a_{n}\right)\cdot\lim_{n\to\infty}b_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(\frac{a_{n}}{b_{n}}\right)=\frac{\lim_{n\to\infty}a_{n}}{\lim_{n\to\infty}b_{n}},\lim_{n\to\infty}b_{n}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}a_{n}^{p}=\left[\lim_{n\to\infty}a_{n}\right]^{p},p>0,a_{n}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Technique - Rational functions
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ is rational function, to find 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}$
+\end_inset
+
+, divide both by highest power of 
+\begin_inset Formula $n$
+\end_inset
+
+ in 
+\series bold
+denominator.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the limit of the following sequences if exist: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{3n^{2}-n+4}{7+6n^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}a_{n} & =\lim_{n\to\infty}\frac{\frac{3n^{2}}{n^{2}}-\frac{n}{n^{2}}+\frac{4}{n^{2}}}{\frac{7}{n^{2}}+\frac{6n^{2}}{n^{2}}}\\
+ & =\frac{3}{6}\\
+\boldsymbol{\lim_{n\to\infty}a_{n}} & \boldsymbol{=\frac{1}{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{n}{n+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}a_{n} & =\lim_{n\to\infty}\frac{n}{n+1}\\
+ & =\lim_{n\to\infty}\frac{\frac{n}{n}}{\frac{n+1}{n}}\\
+ & =\frac{1}{1}\\
+\boldsymbol{\lim_{n\to\infty}a_{n}} & \boldsymbol{=1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{n^{2}-n}{n^{2}+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}a_{n} & =\lim_{n\to\infty}\frac{n^{2}-n}{n^{2}+1}\\
+ & =\lim_{n\to\infty}\frac{\frac{n^{2}}{n^{2}}-\frac{n}{n^{2}}}{\frac{n^{2}}{n^{2}}+\frac{1}{n^{2}}}\\
+ & =\lim_{n\to\infty}\frac{1-\frac{1}{n}}{1+\frac{1}{n^{2}}}\\
+\boldsymbol{\lim_{n\to\infty}a_{n}} & \boldsymbol{=1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+By using L’Hospital’s Rule, calculate the following: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\frac{\ln n}{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{\ln n}{n} & =\lim_{n\to\infty}\frac{\frac{1}{n}}{1}\\
+ & =\lim_{n\to\infty}\frac{1}{n}\\
+\boldsymbol{\lim_{n\to\infty}\frac{\ln n}{n}} & \boldsymbol{=0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\frac{e^{2n}}{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{e^{2n}}{n} & =\lim_{n\to\infty}\frac{\frac{d}{dn}\left[e^{2n}\right]}{\frac{d}{dn}\left[n\right]}\\
+ & =\lim_{n\to\infty}\frac{2e^{2n}}{1}\\
+ & =\lim_{n\to\infty}2e^{2n}\\
+\lim_{n\to\infty}\frac{e^{2n}}{n} & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Theorem - Squeeze Theorem
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a_{n}\le b_{n}\le c_{n},n>n_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=\lim_{n\to\infty}c_{n}=L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Then 
+\begin_inset Formula $\lim_{n\to\infty}b_{n}=L$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Evaluate:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left\{ \frac{\cos^{2}n}{3^{n}}\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-1 & \le\cos n\le1\\
+1 & \le\cos^{2}n\le1\\
+\frac{1}{3} & \le\frac{\cos^{2}n}{3^{n}}\le\frac{1}{3}\\
+\lim_{n\to\infty}\frac{1}{3} & \le\lim_{n\to\infty}\frac{\cos^{2}n}{3^{n}}\le\lim_{n\to\infty}\frac{1}{3}\\
+0 & \le\lim_{n\to\infty}\frac{\cos^{2}n}{3^{n}}\le0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore$
+\end_inset
+
+ According to Squeeze Theorem, 
+\begin_inset Formula $\lim_{n\to\infty}\frac{\cos^{2}n}{3^{n}}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} $
+\end_inset
+
+ (Lecturer mention exam might come out)
+\begin_inset Formula 
+\begin{align*}
+\frac{n!}{n^{n}} & =\frac{n\left(n-1\right)\left(n-2\right)...3\cdot2\cdot1}{n\cdot n\cdot n...\cdot n}\\
+ & =\frac{n}{n}\cdot\frac{n-1}{n}\cdot...\cdot\frac{3}{n}\cdot\frac{2}{n}\cdot\frac{1}{n}\\
+ & =1\cdot\left(1-\frac{1}{n}\right)\cdot...\cdot\frac{3}{n}\cdot\frac{2}{n}\cdot\frac{1}{n}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le\lim_{n\to\infty}\frac{1}{n}\\
+\lim_{n\to\infty}0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le\lim_{n\to\infty}\frac{1}{\infty}\\
+0 & \le\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} \le0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+According to S.T., 
+\begin_inset Formula $\lim_{n\to\infty}\left\{ \frac{n!}{n^{n}}\right\} =0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem 3.3
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}\left|a_{n}\right|=0$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+Evaluate 
+\begin_inset Formula $\lim_{n\to\infty}\frac{\left(-1\right)^{n}}{n}$
+\end_inset
+
+ if exists.
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{\left(-1\right)^{n}}{n}\right| & =\lim_{n\to\infty}\frac{1}{n}\\
+\lim_{n\to\infty}\frac{\left(-1\right)^{n}}{n} & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Theorem 3.4
+\end_layout
+
+\begin_layout Enumerate
+Sequence 
+\begin_inset Formula $\left\{ r^{n}\right\} _{n=0}^{\infty}$
+\end_inset
+
+ converges if 
+\begin_inset Formula $-1<r\le1$
+\end_inset
+
+, diverges for all other 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Also,
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}=\begin{cases}
+0 & ,-1<r<1\\
+1 & ,r=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Evaluate:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(-1\right)^{n}=\infty,Divergent$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\left(\frac{1}{3}\right)^{n}=0,convergent$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}5^{n}=\infty,Divergent$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Infinite Series
+\end_layout
+
+\begin_layout Subsection
+Definition 3.4
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Infinite series 
+\series default
+(or just 
+\series bold
+series)
+\series default
+ 
+\begin_inset Formula $=a_{1}+a_{2}+a_{3}+...+a_{n}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ OR 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Series = infinite sum of numbers
+\end_layout
+
+\begin_layout Enumerate
+Sequence = numbers, 1-to-1 correspondence with positive integer.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \frac{1}{n}\right\} =\left\{ 1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{1}{n}\right)=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+...$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \frac{\left(-1\right)^{n-1}}{2^{n-1}}\right\} =\left\{ 1,-\frac{1}{2},\frac{1}{4},...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{\left(-1\right)^{n-1}}{2^{n-1}}\right)=1-\frac{1}{2}+\frac{1}{4}-...$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Definition 3.5 - Partial Sums, 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $k-th$
+\end_inset
+
+ Partial sum, 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ of 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S_{k}=a_{1}+a_{2}+...+a_{k}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sequence of partial sum of 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ S_{1},S_{2}...S_{n},...\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the sequence of partial sum of the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=1}^{\infty}n & =1+2+3+...\\
+S_{1} & =1\\
+S_{2} & =1+2=3\\
+S_{3} & =....
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sequence of partial sum: 
+\begin_inset Formula $\left\{ 1,3,6,10,\frac{n}{2}\left(n+1\right),...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Convergence & Divergence of Series
+\end_layout
+
+\begin_layout Subsection
+Definition
+\end_layout
+
+\begin_layout Enumerate
+The series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 
+\series bold
+converges
+\series default
+ if and only if the sequence 
+\begin_inset Formula $\left\{ 𝑆𝑛\right\} $
+\end_inset
+
+ is convergent and 
+\begin_inset Formula $\lim_{n\to\infty}S_{n}=s$
+\end_inset
+
+ exists as a real number.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The number 
+\begin_inset Formula $s$
+\end_inset
+
+ is called the 
+\series bold
+sum 
+\series default
+of the series, 
+\begin_inset Formula $s=\sum_{n=1}^{\infty}a_{n}=a_{1}+a_{2}+...+a_{n}+...$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If the sequence 
+\begin_inset Formula $\left\{ 𝑆𝑛\right\} $
+\end_inset
+
+ is divergent, then the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 
+\series bold
+diverges
+\end_layout
+
+\begin_layout Enumerate
+To put it simply, series converges if and only if:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+sequence is convergent AND
+\end_layout
+
+\begin_layout Enumerate
+the value of function when approaching infinity is a real number.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Show that the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}n$
+\end_inset
+
+ is divergent
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ S_{n}\right\} =\left\{ 1,2,3,....,\infty\right\} $
+\end_inset
+
+ is divergent
+\end_layout
+
+\begin_layout Enumerate
+Therefore, it is divergent.
+\end_layout
+
+\begin_layout Subsection
+Theorem 3.5
+\end_layout
+
+\begin_layout Enumerate
+If the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is convergent, then 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Converse not generally true.
+ Further investigation needed.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem 3.6: Test for Divergence
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}\neq0$
+\end_inset
+
+ or 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}$
+\end_inset
+
+ D.N.E., the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is divergent.
+\end_layout
+
+\begin_layout Enumerate
+Put it simply, if the limit to infinity is not 0, then it diverges.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Show that the following series are divergent.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n^{2}}{3+5n^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{n^{2}}{3+5n^{2}} & =\lim_{n\to\infty}\frac{\frac{n^{2}}{n^{2}}}{\frac{3}{n^{2}}+\frac{5n^{2}}{n^{2}}}\\
+ & =\lim_{n\to\infty}\frac{1}{\frac{3}{n^{2}}+5}\\
+\lim_{n\to\infty}\frac{n^{2}}{3+5n^{2}} & =\frac{1}{5}\neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore Divergent$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{-n}{2n+3}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{-n}{2n+3} & =\lim_{n\to\infty}\frac{\frac{-n}{n}}{\frac{2n}{n}+\frac{3}{n}}\\
+ & =\lim_{n\to\infty}\frac{-1}{2+\frac{3}{n}}\\
+\lim_{n\to\infty}\frac{-n}{2n+3} & =-\frac{1}{2}\\
+\lim_{n\to\infty}\frac{-n}{2n+3} & \neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Special Series
+\end_layout
+
+\begin_layout Subsection
+Geometric Series
+\end_layout
+
+\begin_layout Subsubsection
+Definition
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Geometric series: 
+\series default
+Series with the form 
+\begin_inset Formula $a+ar+ar^{2}+...+ar^{n}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Notation: 
+\begin_inset Formula $\sum_{n=1}^{\infty}ar^{n-1}$
+\end_inset
+
+ OR 
+\begin_inset Formula $\sum_{n=0}^{\infty}ar^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Convergent
+\series default
+, if
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|r\right|<1$
+\end_inset
+
+, AND
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=0}^{\infty}ar^{n}=\frac{a}{1-r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Otherwise, its 
+\series bold
+divergent
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine if the following series converge or diverge.
+ If they converge give the value of the series.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}9^{-n+2}4^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $9^{-n+2}4^{n+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+9^{-n+2}4^{n+1} & =\frac{9^{2}}{9^{n}}4\left(4^{n}\right)\\
+ & =\frac{9^{2}}{9^{n}}4\left(4^{n}\right)\\
+ & =4\cdot9^{2}\cdot\left(\frac{4}{9}\right)^{2}\\
+r & =\frac{4}{9}<1,conv
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{\infty}=\frac{\left(9\cdot4^{2}\right)}{1-\frac{4}{9}}=259.2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-4\right)^{3n}}{5^{n-1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\left(-4\right)^{3n}}{5^{n-1}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{\left(-4\right)^{3n}}{5^{n-1}} & =\frac{\left(-4\right)^{3n}}{5^{n}\cdot5^{-1}}\\
+ & =5\cdot\frac{\left(-4^{3}\right)^{n}}{5^{n}}\\
+ & =5\cdot\left(\frac{-4^{3}}{5}\right)^{n}\\
+ & =5\cdot\left(-\frac{4^{3}}{5}\right)^{n}\\
+r & =-\frac{4^{3}}{5}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\left|r\right|>1,$
+\end_inset
+
+ the series is divergent
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Telescoping Series
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Definition 3.8
+\series default
+: A telescoping series is a series whose sum can be found by exploiting
+ the circumstance that nearly every term cancels with either a succeeding
+ or preceding term.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+Given the telescoping series 
+\begin_inset Formula $\frac{1}{1\text{∙}2}+\frac{1}{2\text{∙}3}+\frac{1}{3\text{∙}4}+...+\frac{1}{\text{𝑛}(\text{𝑛}+1)}+...$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the n-th partial sum 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ of the series for n = 1, 2, 3, 4
+\begin_inset Formula 
+\[
+S_{1}=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{2} & =\frac{1}{2}+\frac{1}{6}\\
+ & =\frac{2}{3}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{3} & =\frac{1}{2}+\frac{1}{6}+\frac{1}{12}\\
+ & =\frac{3}{4}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{4} & =\frac{1}{2}+\frac{1}{6}+\frac{1}{12}+\frac{1}{20}\\
+ & =\frac{4}{5}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+\sum\frac{1}{n\left(n+1\right)} & =\sum\left(\frac{1}{n}-\frac{1}{n+1}\right)\\
+ & =\left(\frac{1}{1}\boldsymbol{-\frac{1}{2}}\right)+\left(\boldsymbol{\frac{1}{2}}-\frac{1}{3}\right)+\left(\frac{1}{3}-\frac{1}{4}\right)+...+\left(\frac{1}{n-1}-\frac{1}{n}\right)+\left(\frac{1}{n}-\frac{1}{n+1}\right)\\
+ & =1-\frac{1}{n+1}\\
+ & =\frac{n}{n+1}\\
+ & =S_{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show that the series is convergent and find its sum.
+ 
+\begin_inset Formula 
+\begin{align*}
+S_{\infty} & =\lim_{n\to\infty}S_{n}\\
+ & =1-\frac{1}{\infty+1}\\
+ & =1,convergent
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note: Sum is 
+\begin_inset Formula $1$
+\end_inset
+
+ because they cancel out each other for every term.
+ So only the remaining term counts.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the sum of the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{2}{n\left(n+1\right)}+\frac{1}{2^{n}}\right)$
+\end_inset
+
+ .
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=1}^{\infty}\left(\frac{2}{n\left(n+1\right)}+\frac{1}{2^{n}}\right) & =2\sum\frac{1}{n\left(n+1\right)}+\sum\frac{1}{2^{n}}\\
+ & =2+\sum\left(\frac{1}{2}\right)^{n}\\
+ & =2+\frac{\frac{1}{2}}{1-\frac{1}{2}}\\
+\sum_{n=1}^{\infty}\left(\frac{2}{n\left(n+1\right)}+\frac{1}{2^{n}}\right) & =3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Harmonic Series (Not in finals, safe to ignore)
+\end_layout
+
+\begin_layout Quote
+Definition 3.9: A series of the form 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n}=1+\frac{1}{2}+\frac{1}{3}+...+\frac{1}{n}+...$
+\end_inset
+
+ is called a harmonic series.
+ Always 
+\series bold
+divergent
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Proof for divergence (Proof by contradiction)
+\end_layout
+
+\begin_layout Enumerate
+Assume harmonic series converges to 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Calculations
+\begin_inset Formula 
+\begin{align*}
+H & =1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+...\\
+H & =\left(1+\frac{1}{2}\right)+\left(\frac{1}{3}+\frac{1}{4}\right)+...\\
+H & >\left(\frac{1}{2}+\frac{1}{2}\right)+\left(\frac{1}{4}+\frac{1}{4}\right)+...\\
+ & =1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+...\\
+ & =H
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Contradiction 
+\begin_inset Formula $\left(H>H\right)$
+\end_inset
+
+.
+ So the harmonic series is not convergent.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $p-series$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Definition 3.10
+\series default
+: A 
+\begin_inset Formula $p-series$
+\end_inset
+
+ is a series of the form 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{p}}=1+\frac{1}{2^{p}}+\frac{1}{3^{p}}+...+\frac{1}{n^{p}}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{P}}=\begin{cases}
+converges & p>1\\
+diverges & p\le1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine whether the given series converges or diverges.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\frac{1}{4^{2}}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p=2,conv$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $1+\frac{1}{\sqrt{2}}+\frac{1}{\sqrt{3}}+\frac{1}{\sqrt{4}}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p=\frac{1}{2},div$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Convergent Test for Series
+\end_layout
+
+\begin_layout Subsection
+The Integral Test
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.8:
+\series default
+ Suppose 
+\begin_inset Formula $f$
+\end_inset
+
+ is a continuous, positive, 
+\series bold
+decreasing
+\series default
+ function on 
+\begin_inset Formula $[1,∞)$
+\end_inset
+
+ and 
+\begin_inset Formula $𝑎_{n}=𝑓(𝑛)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Quote
+a.
+ If 
+\begin_inset Formula $\int_{1}^{\infty}f\left(x\right)dx$
+\end_inset
+
+ is convergent, then 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is convergent.
+ 
+\end_layout
+
+\begin_layout Quote
+b.
+ If 
+\begin_inset Formula $\int_{1}^{\infty}f\left(x\right)dx$
+\end_inset
+
+ is divergent, then 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is divergent.
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Example
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+By using Integral Test, determine whether the following series converges
+ or diverges.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{5}{n+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{1}^{\infty}\frac{5}{x+1}dx & =5\ln\left(x+1\right)_{1}^{\infty}\\
+ & =5\ln\infty-5\ln2\\
+\int_{1}^{\infty}\frac{5}{x+1}dx & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore Divergent$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}e^{-n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{1}^{\infty}e^{-x}dx & =\int_{1}^{\infty}e^{-x}dx\\
+ & =\left[-e^{-x}\right]_{1}^{\infty}\\
+ & =-e^{-\infty}-\left(-e^{-1}\right)\\
+ & =-e^{-\infty}+e^{-1}\\
+\int_{1}^{\infty}e^{-x}dx & =e^{-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\therefore Convergent$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Comparison Test/Limit Comparison Test
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.9
+\series default
+: 
+\series bold
+Comparison Test
+\series default
+ 
+\end_layout
+
+\begin_layout Quote
+Suppose 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ are series with positive terms.
+ 
+\end_layout
+
+\begin_layout Quote
+a.
+ If 
+\begin_inset Formula $∑b_{n}$
+\end_inset
+
+ is convergent and 
+\begin_inset Formula $𝑎_{n}\le b_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+, then 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ is also convergent.
+ 
+\end_layout
+
+\begin_layout Quote
+b.
+ If 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ is divergent and 
+\begin_inset Formula $a_{n}\ge b_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+, then 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ is also divergent.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine whether the following series converges or diverges: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{3}{2n^{2}+4n+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+a_{n} & =\frac{3}{2n^{2}+4n+1}\\
+2n^{2}+4n+1 & >2n^{2}>n^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{3}{2n^{2}+4n+1}<\frac{3}{n^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $3\sum\frac{1}{n^{2}}$
+\end_inset
+
+ is a convergent 
+\begin_inset Formula $p-series$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{3}{2n^{2}+4n+1}$
+\end_inset
+
+ is convergent.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{2^{n}+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}=\frac{1}{2^{n}+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2^{n}+1>2^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{2^{n}+1}<\frac{1}{2^{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\sum\frac{1}{2^{n}}$
+\end_inset
+
+ is a convergent geometric series
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{2^{n}+1}$
+\end_inset
+
+ is convergent.
+\end_layout
+
+\end_deeper
+\begin_layout Quote
+Theorem 3.10: 
+\series bold
+Limit Comparison Test
+\series default
+ 
+\end_layout
+
+\begin_layout Quote
+Suppose 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ are series with positive terms.
+ If 
+\begin_inset Formula $\lim_{n\to\infty}\frac{a_{n}}{b_{n}}=c$
+\end_inset
+
+ where 
+\begin_inset Formula $c$
+\end_inset
+
+ is a finite number and 
+\begin_inset Formula $c>0$
+\end_inset
+
+, then either both series converge or both diverge.
+ If c = 0, no conclusion.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine whether the following series converges or diverges:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{1+\sqrt{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{1}{1+\sqrt{n}},b_{n}=\frac{1}{\sqrt{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ is a divergent 
+\begin_inset Formula $p$
+\end_inset
+
+-series, 
+\begin_inset Formula $p=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\frac{a_{n}}{b_{n}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{a_{n}}{b_{n}} & =\lim_{n\to\infty}\frac{\left(\frac{1}{1+\sqrt{n}}\right)}{\frac{1}{\sqrt{n}}}\\
+ & =\lim_{n\to\infty}\frac{\sqrt{n}}{1+\sqrt{n}}\\
+ & =\lim_{n\to\infty}\frac{1}{\frac{1}{\sqrt{n}}+1}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{1+\sqrt{n}}$
+\end_inset
+
+ diverges.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{2^{n}-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{1}{2^{n}-1},b_{n}=\frac{1}{2^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ is a convergent geometric series.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\frac{a_{n}}{b_{n}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{a_{n}}{b_{n}} & =\lim_{n\to\infty}\frac{\frac{1}{2^{n}-1}}{\frac{1}{2^{n}}}\\
+ & =\lim_{n\to\infty}\frac{2^{n}}{2^{n}-1}\\
+ & =\lim_{n\to\infty}\frac{1}{1-\frac{1}{2^{n}}}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{2^{n}-1}$
+\end_inset
+
+ converges.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Alternating Series Test
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.11
+\series default
+: If the alternating series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}=\sum_{n=1}^{\infty}\left(-1\right)^{n}b_{n}$
+\end_inset
+
+ or 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(-1\right)^{n-1}b_{n}$
+\end_inset
+
+ where 
+\begin_inset Formula $b_{n}>0$
+\end_inset
+
+ satisfies: 
+\end_layout
+
+\begin_layout Quote
+1.
+ 
+\begin_inset Formula $𝑏_{𝑛+1}\le b_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ (decreasing); 
+\end_layout
+
+\begin_layout Quote
+2.
+ 
+\begin_inset Formula $\lim_{n\to\infty}b_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Then the series is convergent.
+ 
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Note
+\series default
+: This test CANNOT be used to determine if the series is divergent.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine whether the following series converges or diverges:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-1\right)^{n}}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $b_{n}=\frac{1}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b_{n}=\left(1,\frac{1}{2},\frac{1}{3},\frac{1}{4},...\right)$
+\end_inset
+
+, decreasing
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}b_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-1\right)^{n}}{n}$
+\end_inset
+
+ is convergent.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-1\right)^{n}n^{2}}{n^{2}+3}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $b_{n}=\frac{n^{2}}{n^{2}+3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b_{n}=\left(\frac{1}{4},\frac{4}{7},...\right)$
+\end_inset
+
+ increase
+\end_layout
+
+\begin_layout Enumerate
+This test is not suitable, run another test.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Absolute Convergence
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Definition 3.11
+\series default
+: A series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is called 
+\series bold
+absolutely convergent 
+\series default
+if the series of absolute values, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ is convergent.
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-1\right)^{n}}{n^{2}}$
+\end_inset
+
+ is absolutely convergent because 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|\frac{\left(-1\right)^{n}}{n^{2}}\right|=\sum_{n=1}^{\infty}\frac{1}{n^{2}}$
+\end_inset
+
+ is a convergent 
+\begin_inset Formula $p-series\left(p=2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.12: 
+\series default
+If 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ converges, then the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ converges.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Definition 3.12: 
+\series default
+a series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is called conditionally convergent if the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is convergent but the series of absolute values 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ is divergent.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-1\right)^{n}}{n}$
+\end_inset
+
+ is 
+\series bold
+conditionally convergent 
+\series default
+because 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(-1\right)^{n}}{n}$
+\end_inset
+
+ is an alternating harmonic series which is convergent, but 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|\frac{\left(-1\right)^{n}}{n}\right|=\sum_{n=1}^{\infty}\frac{1}{n}$
+\end_inset
+
+ is divergent.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Test the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\cos n}{n^{2}}$
+\end_inset
+
+ for absolute convergence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\frac{\cos n}{n^{2}}\right|<\frac{1}{n^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\sum\frac{1}{n^{2}}$
+\end_inset
+
+ is a convergent 
+\begin_inset Formula $p-series$
+\end_inset
+
+ 
+\begin_inset Formula $\left(p=2\right)$
+\end_inset
+
+, but comparison test, 
+\begin_inset Formula $\sum\left|\frac{\cos n}{n^{2}}\right|$
+\end_inset
+
+ is absolutely convergent.
+\end_layout
+
+\begin_layout Enumerate
+So, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\cos n}{n^{2}}$
+\end_inset
+
+ is absolutely convergent.
+\end_layout
+
+\begin_layout Subsection
+The Ratio Test
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.13
+\series default
+: Suppose 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ is a series with positive terms.
+\end_layout
+
+\begin_layout Quote
+If 
+\begin_inset Formula $\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right|=\begin{cases}
+<1 & ,\sum_{n=1}^{\infty}a_{n}\text{converges}\\
+>1\text{or}\infty & ,\sum_{n=1}^{\infty}a_{n}\text{diverges}\\
+1 & ,\text{the Ratio Test inconclusive}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Determine whether the following series converges or diverges:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{99^{n}}{n!}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}=\frac{99^{n}}{n!},a_{n+1}=\frac{99^{n+1}}{\left(n+1\right)!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right| & =\lim_{n\to\infty}\frac{99^{n+1}}{\left(n+1\right)!}\cdot\frac{n!}{99^{n}}\\
+ & =\lim_{n\to\infty}\frac{99^{n+1}}{\left(n+1\right)!}\cdot\frac{n!}{99^{n}}\\
+ & =\lim_{n\to\infty}\frac{99^{n+1}}{99^{n}}\cdot\frac{n!}{\left(n+1\right)!}\\
+ & =\lim_{n\to\infty}\frac{99^{n+1}}{99^{n}}\cdot\frac{n!}{\left(n+1\right)!}\\
+ & =\lim_{n\to\infty}99\cdot\frac{n!}{\left(n+1\right)n!}\text{note: still the same thing}\\
+ & =\lim_{n\to\infty}\frac{99}{n+1}=0\\
+ & <1\left(convergent\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\left(2n\right)!}{\left(n!\right)^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}=\frac{\left(2n\right)!}{\left(n!\right)^{2}},a_{n+1}=\frac{\left(2\left(n+1\right)\right)!}{\left(\left(n+1\right)!\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right| & =\lim_{n\to\infty}\frac{\left(2\left(n+1\right)\right)!}{\left(\left(n+1\right)!\right)^{2}}*\frac{\left(n!\right)^{2}}{\left(2n\right)!}\\
+ & =\lim_{n\to\infty}\frac{\left(2\left(n+1\right)\right)!}{\left(2n\right)!}*\frac{\left(n!\right)^{2}}{\left(\left(n+1\right)!\right)^{2}}\\
+ & =\lim_{n\to\infty}\frac{\left(2\left(n+1\right)\right)!}{\left(2n\right)!}*\left(\frac{n!}{\left(n+1\right)!}\right)^{2}\\
+ & =\lim_{n\to\infty}\frac{\left(2n+2\right)\left(2n+1\right)\cancel{\left(2n\right)!}}{\cancel{\left(2n\right)!}}\cdot\left(\frac{\cancel{n!}}{\left(n+1\right)\cancel{n!}}\right)^{2}\\
+ & =\lim_{n\to\infty}\frac{\left(2n+2\right)\left(2n+1\right)\cancel{\left(2n\right)!}}{\cancel{\left(2n\right)!}}\cdot\left(\frac{\cancel{n!}}{\left(n+1\right)\cancel{n!}}\right)^{2}\\
+ & =\lim_{n\to\infty}\frac{\left(2n+2\right)\left(2n+1\right)}{\left(n+1\right)\left(n+1\right)}\\
+ & =\lim_{n\to\infty}\frac{4n^{2}+6n+2}{n^{2}+2n+1}=4\left(>1\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The series is divergent
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n^{2}}{\left(2n-1\right)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\frac{n^{2}}{\left(2n-1\right)!},a_{n+1}=\frac{\left(n+1\right)^{2}}{\left(2\left(n+1\right)-1\right)!}=\frac{\left(n+1\right)^{2}}{\left(2n+1\right)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_{n}}\right| & =\lim_{n\to\infty}\frac{\left(n+1\right)^{2}}{\left(2n+1\right)!}\cdot\frac{\left(2n-1\right)!}{n^{2}}\\
+ & =\lim_{n\to\infty}\frac{\left(n+1\right)^{2}}{n^{2}}\cdot\frac{\left(2n-1\right)!}{\left(2n+1\right)!}\\
+ & =\lim_{n\to\infty}\frac{n^{2}+2n+1}{n^{2}}\cdot\frac{\left(2n-1\right)!}{\left(2n+1\right)\left(2n+1-1\right)\left(2n+1-2\right)!}\text{note: expand the factorial}\\
+ & =\lim_{n\to\infty}\frac{n^{2}+2n+1}{n^{2}}\cdot\frac{\cancel{\left(2n-1\right)!}}{\left(2n+1\right)\left(2n\right)\cancel{\left(2n-1\right)!}}\\
+ & =\lim_{n\to\infty}\frac{n^{2}+2n+1}{n^{2}}\cdot\frac{1}{\left(2n+1\right)\left(2n\right)}\\
+ & =\lim_{n\to\infty}\left(1+\frac{2}{n}+\frac{1}{n^{2}}\right)\cdot\frac{1}{\left(2n+1\right)\left(2n\right)}\\
+ & =1\cdot0\\
+ & =0\\
+ & =convergent
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+The Root Test
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.14
+\series default
+: Suppose we have the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quote
+Define, 
+\begin_inset Formula $L=\lim_{n\to\infty}\sqrt[n]{\left|a_{n}\right|}=\lim_{n\to\infty}\left|a_{n}\right|^{\frac{1}{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Then, if 
+\begin_inset Formula $L<1$
+\end_inset
+
+, the series is absolutely convergent (and hence convergent).
+\end_layout
+
+\begin_layout Quote
+If 
+\begin_inset Formula $L>1$
+\end_inset
+
+, the series is divergent.
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $L=1$
+\end_inset
+
+, the test is inconclusive.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Example: 
+\series default
+Determine whether the following series converges or diverges:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{4n-3n^{2}}{5n^{2}+2}\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\left(\frac{4n-3n^{2}}{5n^{2}+2}\right)^{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sqrt[n]{\left(\frac{4n-3n^{2}}{5n^{2}+2}\right)^{n}} & =\frac{4n-3n^{2}}{5n^{2}+2}\\
+\lim_{n\to\infty}\left|\frac{4n-3n^{2}}{5n^{2}+2}\right| & =\frac{3}{5}<1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The series is convergent
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n^{n}}{4^{1+3n}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sqrt{\frac{n^{n}}{4^{1+3n}}} & =\frac{n}{4^{\frac{1+3n}{n}}}\\
+ & =\frac{n}{4^{\frac{1}{n}+3}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left|\lim_{n\to\infty}\frac{n}{4^{\frac{1}{n}+3}}\right| & =\frac{\infty}{4^{3}}\\
+ & =\infty
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The series is divergent
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Example, exapnd the following:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(x+\frac{1}{x}\right)^{5}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(x+\frac{1}{x}\right)^{5} & =\sum_{k=0}^{\infty}\binom{5}{k}x^{5-k}\left(\frac{1}{x}\right)^{k}\\
+ & =\binom{5}{0}x^{5}\left(\frac{1}{x}\right)^{0}+\binom{5}{1}x^{4}\left(\frac{1}{x}\right)^{1}+\binom{5}{2}x^{3}\left(\frac{1}{x}\right)^{2}+\binom{5}{3}x^{2}\left(\frac{1}{x}\right)^{3}+\binom{5}{4}x^{1}\left(\frac{1}{x}\right)^{4}+\binom{5}{5}x^{0}\left(\frac{1}{x}\right)^{5}\\
+ & =x^{5}+5x^{3}+10x+\frac{10}{x}+\frac{5}{x^{3}}+\frac{1}{x^{5}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(2-x\right)^{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2^{5}-5\left(2^{4}x\right)+10\left(2^{3}\right)x^{3}+5\left(2^{1}x^{4}\right)-x^{5}=32-80x+80x^{2}-40x^{3}+10x^{4}-x^{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $161+72\sqrt{5}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(2+\sqrt{5}\right)^{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Start by writing the terms in pascal triangle: 
+\begin_inset Formula $1,4,6,4,1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Continue by adding values into the equation
+\begin_inset Formula 
+\begin{align*}
+\left(2+\sqrt{5}\right)^{4} & =1\left(2\right)^{4}+4\left(2\right)^{3}\left(\sqrt{5}\right)+6\left(2\right)^{2}\left(\sqrt{5}\right)^{2}+4\left(2\right)\left(\sqrt{5}\right)^{3}+1\left(\sqrt{5}\right)^{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Binomial Series
+\end_layout
+
+\begin_layout Standard
+Theorem: 
+\series bold
+Binomial Theorem
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $n$
+\end_inset
+
+ is any positive integer, then 
+\begin_inset Formula 
+\begin{align*}
+\left(a+b\right)^{n} & =\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^{k}\\
+ & =a^{n}+na^{n-1}b+\frac{n\left(n-1\right)}{2!}a^{n-2}b^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}a^{n-3}b^{3}+...+nab^{-1}+b^{n}
+\end{align*}
+
+\end_inset
+
+Where 
+\begin_inset Formula $\binom{n}{k}=\frac{n!}{\left(n-k\right)!k!}$
+\end_inset
+
+ (binomial coefficient)
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Graphics
+	filename img/c3/3.4-binom-pascals.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example: Expand the following functions as a power series:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{1}{\left(1+x\right)^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\left(1+x\right)^{2}} & =\left(1+x\right)^{-2}\\
+ & =1+\left(-2\right)x+\frac{-2\left(-2-1\right)}{2!}x^{2}+\frac{-2\left(-2-1\right)\left(-2-2\right)}{3!}x^{3}+...\\
+ & =1-2x+3x^{2}-4x^{3}+....
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sqrt{1+x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sqrt{1+x} & =\left(1+x\right)^{\frac{1}{2}}\\
+ & =1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}x^{2}+\frac{\frac{1}{2}\left(\frac{1}{2}=1\right)\left(\frac{1}{2}-2\right)}{3!}x^{3}\\
+ & =1+\frac{1}{2}x+\frac{1}{8}x^{2}+\frac{1}{16}x^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Power Series
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Definition 3.13
+\series default
+: A power series is a series of the form 
+\begin_inset Formula $\sum c_{n}x^{n}=𝑐_{0}+𝑐_{1}𝑥+𝑐_{2}𝑥^{2}+𝑐_{3}𝑥^{3}…$
+\end_inset
+
+where 
+\begin_inset Formula $x$
+\end_inset
+
+ is a variable and the 
+\begin_inset Formula $c_{n}’s$
+\end_inset
+
+ are constants called the 
+\series bold
+coefficients
+\series default
+ of the series.
+ 
+\end_layout
+
+\begin_layout Quote
+More generally, a series of the form 
+\begin_inset Formula $∑𝑐_{n}(𝑥−𝑎)^{n}=c_{0}+𝑐_{1}(𝑥−𝑎)+𝑐_{2}(𝑥−𝑎)^{2}…$
+\end_inset
+
+ is called a 
+\series bold
+power series in 
+\begin_inset Formula $(x-a)$
+\end_inset
+
+
+\series default
+ or a 
+\series bold
+power series centered at 
+\begin_inset Formula $a$
+\end_inset
+
+
+\series default
+ or a 
+\series bold
+power series about 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.15: 
+\series default
+For a given power series 
+\begin_inset Formula $\sum c_{n}\left(x-a\right)^{n}$
+\end_inset
+
+ there are only three possibilities: 
+\end_layout
+
+\begin_layout Quote
+i.
+ The series converges only at the point 
+\begin_inset Formula $x=a$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Quote
+ii.
+ The series converges for all 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Quote
+iii.
+ The series converges if 
+\begin_inset Formula $\left|x-a\right|<R$
+\end_inset
+
+ and diverges if 
+\begin_inset Formula $\left|x-a\right|>R$
+\end_inset
+
+, where the positive number 
+\begin_inset Formula $R$
+\end_inset
+
+ is called the 
+\series bold
+radius of convergence
+\series default
+ of the power series.
+ The set of points at which the series converges is called the 
+\series bold
+interval of convergence
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Example
+\series default
+: Determine the radius of convergence and interval of convergence for the
+ following power series:-
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=0}^{\infty}\frac{n\left(x+2\right)^{n}}{3^{n+1}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+a_{n} & =\sum_{n=0}^{\infty}\frac{n\left(x+2\right)^{n}}{3^{n+1}}\\
+a_{n+1} & =\sum_{n=0}^{\infty}\frac{\left(n+1\right)\left(x+2\right)^{n+1}}{3^{n+2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{a_{n+1}}{a_{n}} & =\frac{\left(n+1\right)\left(x+2\right)^{n+1}}{3^{n+2}}\cdot\frac{3^{n+1}}{n\left(x+2\right)^{n}}\\
+ & =\frac{1}{3}\left(\frac{n+1}{n}\right)\left(x+2\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The series converges if 
+\begin_inset Formula $\lim<1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\left|\frac{1}{3}\left(\frac{n+1}{n}\right)\left(x+2\right)\right| & <1\\
+\lim_{n\to\infty}\left|\frac{1}{3}\left(x+2\right)\right| & <1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Radius of convergence
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $x$
+\end_inset
+
+ is not dependent on 
+\begin_inset Formula $n$
+\end_inset
+
+, we can factor it out and make it become
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{3}\left|\left(x+2\right)\right| & <1\\
+\left|\left(x+2\right)\right| & <3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, the radius of convergence is 
+\begin_inset Formula $R=3$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Interval of convergence
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{align*}
+-1<\frac{1}{3}\left(x+2\right) & <1\\
+-1<\frac{x+2}{3} & <1\\
+-3<x+2< & 3\\
+-5<x & <1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=0}^{\infty}\frac{2^{n}\left(4x-8\right)^{n}}{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{n}=\frac{2^{n}\left(4x-8\right)^{n}}{n},a_{n+1}=\frac{2^{n+1}\left(4x-8\right)^{n+1}}{n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use the ratio test to find the limit 
+\begin_inset Formula $L$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+L & =\lim_{n\to\infty}\left|\frac{2^{n+1}\left(4x-8\right)^{n+1}}{n+1}\cdot\frac{n}{2^{n}\left(4x-8\right)^{n}}\right|\\
+ & =\lim_{n\to\infty}\left|\frac{2^{\cancel{n}+1}\left(4x-8\right)^{\cancel{n+}1}}{n+1}\cdot\frac{n}{\cancel{2^{n}\left(4x-8\right)^{n}}}\right|\\
+ & =\lim_{n\to\infty}\left|\frac{2n\left(4x-8\right)}{n+1}\right|\\
+ & =\lim_{n\to\infty}\left|\frac{\frac{2n\left(4x-8\right)}{n}}{\frac{n}{n}+\frac{1}{n}}\right|\\
+ & =\left|\frac{2\left(4x-8\right)}{1}\right|\\
+ & =2\left|\left(4x-8\right)\right|
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For the series to converge, 
+\begin_inset Formula $L<1$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+2\left|\left(4x-8\right)\right| & <1\\
+\left|\left(4x-8\right)\right| & <\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, the radius of convergence is 
+\begin_inset Formula $R=\frac{1}{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Next, find the interval of convergence
+\begin_inset Formula 
+\begin{align*}
+-\frac{1}{2} & <4\left(x-2\right)<\frac{1}{2}\\
+-\frac{1}{8} & <x-2<\frac{1}{8}\\
+\frac{15}{8} & <x<\frac{17}{8}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, the interval of convergence is 
+\begin_inset Formula $\frac{15}{8}<x<\frac{17}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Representations of Functions as Power Series
+\end_layout
+
+\begin_layout Quote
+We say that the power series is a representation of a function on the interval
+ of convergence.
+\end_layout
+
+\begin_layout Quote
+A power series about 
+\begin_inset Formula $x=0$
+\end_inset
+
+ is a series of the form 
+\begin_inset Formula $\sum c_{n}x^{n}=c_{0}+c_{1}x+c_{2}x^{2}+c_{3}x^{3}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+When 
+\begin_inset Formula $c_{i}=1,\forall i$
+\end_inset
+
+, we have a geometric series 
+\begin_inset Formula $\sum_{n=0}^{\infty}x^{n}=1+x+x^{2}+x^{3}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+If 
+\begin_inset Formula $\left|x\right|<1$
+\end_inset
+
+ , the series converges and the sum is 
+\begin_inset Formula $\frac{1}{1-x}$
+\end_inset
+
+ .
+ Thus we have
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}x^{n}=1+x+x^{2}+x^{3}+...=\frac{1}{1-x}\text{for}-1<x<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+In above equation, we express the function 
+\begin_inset Formula $𝑓(𝑥)=\frac{1}{1-x}$
+\end_inset
+
+ as the sum of the power series.
+ So the power series is a representation of 
+\begin_inset Formula $𝑓(𝑥)=\frac{1}{1-x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example: Express 
+\begin_inset Formula $\frac{1}{1+x^{2}}$
+\end_inset
+
+ as the sum of a power series and find the interval of convergence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{1+x^{2}}=\frac{1}{1-\left(-x^{2}\right)}=\sum\left(-x^{2}\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Series is convergent when
+\begin_inset Formula 
+\begin{align*}
+-1 & <-x^{2}<1\\
+-1 & <x^{2}<1\\
+0 & <x<1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Example
+\series default
+: Find a power series representation for 
+\begin_inset Formula $\frac{1}{x+2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Solution
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{x+2} & =\frac{1}{1-\left(-\left(x+1\right)\right)}\\
+ & =\sum_{n=0}^{\infty}\left(-\left(x+1\right)\right)^{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Series is convergent when 
+\begin_inset Formula 
+\begin{align*}
+-1 & <-\left(x+1\right)<1\\
+-1 & <x+1<1\\
+-2 & <x<0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Differentiation and Integration of Power Series
+\end_layout
+
+\begin_layout Standard
+The differentiation and integration of power series are used to obtain power
+ series representations.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Theorem 3.16
+\series default
+: 
+\series bold
+Term-by-term Differentiation and Integration
+\series default
+ 
+\end_layout
+
+\begin_layout Quote
+If the power series 
+\begin_inset Formula $\sum_{n=1}^{\infty}c_{n}\left(x-a\right)^{n}$
+\end_inset
+
+ has radius of convergence 
+\begin_inset Formula $R>0$
+\end_inset
+
+, then the function 
+\begin_inset Formula $f$
+\end_inset
+
+ defined by 
+\begin_inset Formula 
+\[
+𝑓(𝑥)=𝑐_{0}+𝑐_{1}(𝑥-𝑎)+𝑐_{2}(𝑥-𝑎)^{2}+⋯=\sum_{n=0}^{\infty}c_{n}\left(x-a\right)^{n}
+\]
+
+\end_inset
+
+ Is differentiable on the interval of convergence and 
+\end_layout
+
+\begin_layout Quote
+i.
+ 
+\begin_inset Formula $𝑓′(𝑥)=𝑐_{1}+2𝑐_{2}(𝑥-𝑎)+3𝑐_{3}(x-𝑎)^{2}+\cdots=\sum_{n=1}^{\infty}nc_{n}\left(x-a\right)^{n-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Quote
+ii.
+\begin_inset Formula $\int f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int𝑓(𝑥)𝑑𝑥 & =𝐶+c_{0}(𝑥-𝑎)+\frac{c_{1}}{2}(𝑥-𝑎)^{2}+\frac{c_{2}}{3}(𝑥−𝑎)^{3}+\cdots\\
+ & =\text{𝐶}+\sum_{n=0}^{\infty}\frac{c_{n}}{n+1}\left(x-a\right)^{n+1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+The radii of convergence of the power series in above equations are both
+ 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the power series representations for the functions.
+ By using the geometric series 
+\begin_inset Formula $\sum_{n=0}^{\infty}x^{n}=\frac{1}{1-x}$
+\end_inset
+
+ for 
+\begin_inset Formula $\left|x\right|<1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{1}{\left(1-x\right)^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\left[\frac{1}{\left(1-x\right)^{2}}\right] & =\frac{d}{dx}\left[\frac{1}{1-x}\right]\\
+ & =\frac{d}{dx}\left[\sum x^{n}\right]\\
+ & =\sum\frac{d}{dx}\left(x^{n}\right)\\
+ & =\sum nx^{n-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\tan^{-1}x$
+\end_inset
+
+ (hint: 
+\begin_inset Formula $\tan^{-1}x=\int\frac{1}{1+x^{2}}dx$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+\tan^{-1}x & =\int\frac{1}{1+x^{2}}dx\\
+ & =\int\sum\left(-x^{2}\right)dx\\
+ & =\sum\int\left(-1\right)^{n}\left(x^{2n}\right)dx\\
+ & =\sum\int\left(-1\right)^{n}\left(x^{2n}\right)dx\\
+ & =\sum\left(-1\right)^{n}\frac{x^{2n+1}}{2n+1}dx\\
+ & =x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\frac{x^{7}}{7}+...\\
+ & =\tan^{-1}x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Taylor & Maclaurin Series
+\end_layout
+
+\begin_layout Standard
+In previous section we were able to find power series representations for
+ some specific functions.
+ Now we consider the following questions: 
+\series bold
+Which functions have power series representations? How to find such representati
+ons?
+\end_layout
+
+\begin_layout Standard
+Without taking anything away from the process we looked at in the previous
+ section, we come up with a more general method for writing a power series
+ representation.
+\end_layout
+
+\begin_layout Standard
+The concept of a 
+\series bold
+Taylor series
+\series default
+ was formulated by the Scottish mathematician James Gregory and formally
+ introduced by the English mathematician Brook Taylor in 1715.
+ Who was Brook Taylor? He was the one invented Integration by part: ∫ 𝑢𝑑𝑣
+ = 𝑢𝑣 − ∫ 𝑣𝑑𝑢 If the 
+\series bold
+Taylor series is centered at zero
+\series default
+, then that series is also called a 
+\series bold
+Maclaurin series
+\series default
+, named after the Scottish mathematician Colin Maclaurin.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Theorem 3.17: 
+\series default
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ has a power series representation at 
+\begin_inset Formula $a$
+\end_inset
+
+, that is, if 
+\begin_inset Formula $f\left(x\right)=\sum_{n=0}^{\infty}c_{n}\left(x-a\right)^{n}$
+\end_inset
+
+ for 
+\begin_inset Formula $\left|x-a\right|<R$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Quote
+Then 
+\begin_inset Formula $c_{n}=\frac{f^{\left(n\right)}\left(a\right)}{n!}$
+\end_inset
+
+, where 
+\begin_inset Formula $\left(n\right)$
+\end_inset
+
+ represent the number of 
+\begin_inset Formula $'$
+\end_inset
+
+ (or level of derivative)
+\end_layout
+
+\begin_layout Subsection
+Taylor Series (Intro)
+\end_layout
+
+\begin_layout Standard
+Thus, we have a power series representation for the function 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ about 
+\begin_inset Formula $x=a$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\sum_{n=0}^{\infty}c_{n}\left(x-a\right)^{n}\\
+ & =f\left(a\right)+\frac{f'\left(a\right)}{1!}\left(x-a\right)+\frac{f''\left(a\right)}{2!}\left(x-a\right)^{2}+\frac{f'''\left(a\right)}{3!}\left(x-a\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is called the 
+\series bold
+Taylor Series 
+\series default
+of the function 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $a$
+\end_inset
+
+ (or about 
+\begin_inset Formula $a$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+MacLaurin Series (Intro)
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $a=0$
+\end_inset
+
+, then the series 
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\sum_{n=0}^{\infty}\frac{f^{n}\left(0\right)}{n!}x^{n}\\
+ & =f\left(0\right)+\frac{f'\left(0\right)}{1!}+\frac{f''\left(0\right)}{2!}x^{2}+\frac{f'''\left(0\right)}{3!}x^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is called the 
+\series bold
+Maclaurin Series.
+\end_layout
+
+\begin_layout Subsection
+Limit of Compounded Interest
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left(1+\frac{1}{n}\right)^{n}=2.718281828459045...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Proof
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(1+\frac{1}{n}\right)^{n} & =1+n\left(\frac{1}{n}\right)+\frac{n\left(n-1\right)}{2!}\left(\frac{1}{n}\right)^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}\left(\frac{1}{n}\right)^{3}+...\\
+ & =1+1+\frac{n\left(n-1\right)}{2!}\left(\frac{1}{n}\right)^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}\left(\frac{1}{n}\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+\left(1+\frac{1}{n}\right)^{n} & =1+\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+\frac{1}{4!}+...\\
+ & =e
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Expanding similarly,
+\begin_inset Formula 
+\begin{align*}
+\left(1+\frac{x}{n}\right)^{n} & =1+\frac{x}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\frac{x^{4}}{4!}+...\\
+ & =e^{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the Taylor Series for 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ at 
+\begin_inset Formula $a=2$
+\end_inset
+
+, and the Maclaurin Series for 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{-x}$
+\end_inset
+
+.
+ Taylor Series:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=e^{x},f'=e^{x},f''=e^{x},...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(2\right)=e^{2},f'\left(2\right)=e^{2},f''\left(2\right)=e^{2},...$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =f\left(a\right)+\frac{f'\left(a\right)}{1!}\left(x-a\right)+\frac{f''\left(a\right)}{2!}\left(x-a\right)^{2}+\frac{f'''\left(a\right)}{3!}\left(x-a\right)^{3}+...\\
+f\left(x\right) & =e+\frac{e^{2}}{1!}\left(x-2\right)+\frac{e^{2}}{2!}\left(x-2\right)^{2}+\frac{e^{2}}{3!}\left(x-2\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+MacLaurin Series, 
+\begin_inset Formula $a=0$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f & =e^{x},f'=e^{x},f''=e^{x},...\\
+f\left(0\right) & =1,f'\left(0\right)=1,f''\left(0\right)=1,..
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =f\left(0\right)+\frac{f'\left(0\right)}{1!}\left(x\right)+\frac{f''\left(0\right)}{2!}x^{2}+\frac{f'''\left(0\right)}{3!}x^{3}+...\\
+f\left(x\right) & =1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+....\\
+ & =e^{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $e^{-x}$
+\end_inset
+
+, use 
+\begin_inset Formula $f\left(-x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/c3/7.4-e^-x-maclaurin.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Convergence of exponential series:
+\end_layout
+
+\begin_layout Enumerate
+It converges for all 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+It converges faster when 
+\begin_inset Formula $x$
+\end_inset
+
+ is approaching 
+\begin_inset Formula $0$
+\end_inset
+
+, slower when 
+\begin_inset Formula $x$
+\end_inset
+
+ is away from 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+It converges faster when 
+\begin_inset Formula $n$
+\end_inset
+
+ is bigger.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the Maclaurin Series for 
+\begin_inset Formula $\sin x$
+\end_inset
+
+.
+ Then use it to find the Maclaurin Series for 
+\begin_inset Formula $\sin\left(3x^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Derivatives
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f^{\left(n\right)}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)=\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(0\right)=\sin0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'\left(x\right)=\cos x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'\left(0\right)=\cos0=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f''\left(x\right)=-\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f''\left(0\right)=-\sin0=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'''\left(x\right)=-\cos x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'''\left(0\right)=-\cos0=-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f''''\left(x\right)=\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(0\right)=\sin0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =f\left(0\right)+\frac{f'\left(0\right)}{1!}x+\frac{f''\left(0\right)}{2!}x^{2}+\frac{f'''\left(0\right)}{3!}x^{3}+...\\
+f\left(x\right) & =0+\frac{1}{1!}\left(x\right)+\frac{0}{2!}x^{2}-\frac{1}{3!}x^{3}+\frac{0}{4!}x^{4}+\frac{1}{5!}x^{5}-...\\
+\sin x & =x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-...\\
+\sin\left(3x^{2}\right) & =\left(3x^{2}\right)-\frac{\left(3x^{2}\right)^{3}}{3!}+\frac{\left(3x^{2}\right)^{5}}{5!}-...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Important Maclaurin Series
+\end_layout
+
+\begin_layout Standard
+We collect in the following table, some important Maclaurin Series.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Series
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Range
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{1-x}=\sum_{n=0}^{\infty}x^{n}=1+x^{2}+x^{3}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\left(1-x\right)^{2}}=\sum_{n=0}^{\infty}nx^{n-1}=1+2x+3x^{2}+4x^{3}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e^{x}=\sum_{n=0}^{\infty}\frac{x^{n}}{n!}=1+\frac{x}{1!}+\frac{x^{2}}{3!}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-\infty,\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin x=\sum_{n=0}^{\infty}\left(-1\right)^{n}\frac{x^{2n+1}}{\left(2n\right)!}=1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-\infty,\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tan^{-1}x=\sum_{n=0}^{\infty}\left(-1\right)^{n}\frac{x^{2n+1}}{\left(2n+1\right)}=x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\frac{x^{7}}{7}+...$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[-1,1\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Applications of Taylor & Maclaurin Series
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Enumerate
+Evaluate 
+\begin_inset Formula $\lim_{x\to0}\frac{x-\sin x}{x^{3}}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to0}\frac{x-\sin x}{x^{3}} & =\lim_{x\to0}\frac{x-\left(x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-...\right)}{x^{3}}\\
+ & =\lim_{x\to0}\frac{\frac{x^{3}}{3!}-\frac{x^{5}}{5!}+...}{x^{3}}\\
+ & =\lim_{x\to0}\left(\frac{1}{3!}-\frac{x^{2}}{5!}+...\right)\\
+ & =\frac{1}{3!}\\
+\lim_{x\to0}\frac{x-\sin x}{x^{3}} & =\frac{1}{6}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The above example showed us that Maclaurin series can provide a useful alternati
+ve to L'Hospital's Rule to evaluate limit.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Use series to approximate the definite integral to within the indicated
+ accuracy: 
+\begin_inset Formula $\int_{0}^{1}e^{-x^{2}}dx$
+\end_inset
+
+ (3 decimal places).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+e^{x} & =1+\frac{x}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}\\
+e^{-x^{2}} & =1+\frac{\left(-x^{2}\right)}{1!}+\frac{\left(-x^{2}\right)^{2}}{2!}+\frac{\left(-x^{2}\right)^{3}}{3!}+...\\
+ & =1-x^{2}+\frac{x^{4}}{2}-\frac{x^{6}}{6}+...\\
+\int_{0}^{1}e^{-x^{2}} & =\int_{0}^{1}1-x^{2}+\frac{x^{4}}{2}-\frac{x^{6}}{6}+...dx\\
+ & =\left[x-\frac{x^{3}}{3}+\frac{x^{5}}{10}-\frac{x^{7}}{42}+...\right]_{0}^{1}\\
+ & =0.743
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Taylor Polynomials and Maclaurin Polynomials
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ has 
+\begin_inset Formula $n$
+\end_inset
+
+ derivatives at 
+\begin_inset Formula $x=a$
+\end_inset
+
+, we form a polynomial
+\begin_inset Formula 
+\begin{align*}
+T_{n}\left(x\right) & =\sum_{n=0}^{\infty}\frac{f^{i}\left(a\right)}{i!}\left(x-a\right)^{i}\\
+ & =f\left(a\right)+\frac{f'\left(a\right)}{1!}\left(x-a\right)+\frac{f''\left(a\right)}{2!}\left(x-a\right)^{2}+...+\frac{f^{n}\left(a\right)}{n!}\left(x-a\right)^{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+which called the 
+\series bold
+Taylor Polynomial
+\series default
+ of the degree 
+\begin_inset Formula $n$
+\end_inset
+
+ at 
+\begin_inset Formula $x=a$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a=0$
+\end_inset
+
+, then the polynomial
+\begin_inset Formula 
+\begin{align*}
+T_{n}\left(x\right) & =\sum_{n=0}^{\infty}\frac{f^{i}\left(0\right)}{i!}\left(x\right)^{i}\\
+ & =f\left(0\right)+\frac{f'\left(0\right)}{1!}x+\frac{f''\left(0\right)}{2!}x^{2}+...+\frac{f^{n}\left(0\right)}{n!}x^{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+is called the 
+\series bold
+Maclaurin Polynomial.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Find the first three non-zero terms in the Taylor Series for 
+\begin_inset Formula $f\left(x\right)=e^{x}\cos x$
+\end_inset
+
+ about 
+\begin_inset Formula $x=a$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+g\left(x\right) & =e^{x}=e^{a}+e^{a}\left(x-a\right)+\frac{e^{a}}{2}\left(x-a\right)^{2}+...\\
+h\left(x\right) & =\cos x=\cos a-\sin a\left(x-a\right)-\frac{\cos a}{2}\left(x-a\right)^{2}+...\\
+f\left(x\right) & =e^{x}\cos x=g\left(x\right)\cdot h\left(x\right)\\
+ & =\left(e^{a}+e^{a}\left(x-a\right)+\frac{e^{a}}{2}\left(x-a\right)^{2}\right)\left(\cos a-\sin a\left(x-a\right)-\frac{\cos a}{2}\left(x-a\right)^{2}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,681 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Calc II T9
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sti}{}
+{\sum_{n=0}^{\infty}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+By using geometric series 
+\begin_inset Formula $\sum_{n=0}^{8}x^{n}=\frac{1}{1-x}$
+\end_inset
+
+find the power series representations for the following functions:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{x}{4x+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{x}{4x+1} & =\frac{x}{4x+1}\\
+ & =x\left(\frac{1}{1+4x}\right)\\
+ & =x\left(\frac{1}{1-\left(-4x\right)}\right)\\
+ & =x\sum_{n=0}^{\infty}\left(-4x\right)^{n}\\
+ & =x\sum_{n=0}^{\infty}\left(-4\right)^{n}x^{n}\\
+ & =\sum_{n=0}^{\infty}\left(-4\right)^{n}x^{n+1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Alternatively
+\begin_inset Formula 
+\begin{align*}
+ & =x\left(\frac{1}{1-\left(-4x\right)}\right)\\
+ & =x\sum_{n=0}^{\infty}\left(-4x\right)^{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Series is convergent when 
+\begin_inset Formula 
+\begin{align*}
+\left|-4x\right| & <1\\
+\left|-x\right| & <\frac{1}{4}\\
+-\frac{1}{4}<- & x<\frac{1}{4}\\
+-\frac{1}{4}<x & <\frac{1}{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{1}{1+9x^{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{1+9x^{2}} & =\frac{1}{1-\left(-9x^{2}\right)}\\
+ & =\sti\left(-9x^{2}\right)^{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Series is convergent when
+\begin_inset Formula 
+\begin{align*}
+-1 & <-9x^{2}<1\\
+1 & >9x^{2}>0\text{Note: because it is square}\\
+\frac{1}{9} & >9x^{2}>0\\
+\sqrt{\frac{1}{9}} & >x>\frac{1}{3}\\
+-\frac{1}{3} & <x<\frac{1}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{1}{4+x^{2}}$
+\end_inset
+
+=
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{4+x^{2}} & =\frac{1}{4\left(1+\frac{x^{2}}{4}\right)}\\
+ & =\frac{1}{4}\left(\frac{1}{1-\left(-\frac{x^{2}}{4}\right)}\right)\\
+ & =\frac{1}{4}\left(\frac{1}{1-\left(-\frac{x^{2}}{4}\right)}\right)\\
+ & =\frac{1}{4}\sti\left(-\frac{x^{2}}{4}\right)^{n}\\
+ & =\frac{1}{4}\sti\left(-\frac{x^{2}}{4}\right)^{n}\\
+ & =\sti\left(-1\right)^{n}\frac{x^{2n}}{4^{n+1}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Series is convergent when 
+\begin_inset Formula 
+\begin{align*}
+\left|-\frac{x^{2}}{4}\right| & <1\\
+0< & \frac{x^{2}}{4}<1\\
+0< & x^{2}<4\\
+-2< & x<2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Use the related Maclaurin series to find the first three nonzero terms in
+ the Maclaurin series for the given functions:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sin\left(x^{4}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Maclaurin series
+\begin_inset Formula 
+\begin{align*}
+\sin x & =x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}+...\\
+\sin\left(x^{4}\right) & =x^{4}-\frac{\left(x^{4}\right)^{3}}{3!}+\frac{\left(x^{4}\right)^{5}}{5!}+...\\
+ & =x^{4}-\frac{x^{12}}{6}+\frac{x^{20}}{120}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x\cos2x$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\cos x & =1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+...\\
+\cos2x & =1-\frac{\left(2x\right)^{2}}{2!}+\frac{\left(2x\right)^{4}}{4!}+...\\
+ & =1-\frac{4x^{2}}{2}+\frac{16x^{4}}{24}+...\\
+ & =1-2x^{2}+\frac{2}{3}x^{4}+...\\
+x\cos2x & =x-2x^{3}+\frac{2}{3}x^{5}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=e^{-\frac{x}{2}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =e^{-\frac{x}{2}}\\
+e^{x} & =1-x+\frac{x^{2}}{2}+...\\
+e^{-\frac{x}{2}} & =1-\frac{x}{2}+\frac{\left(\frac{x}{2}\right)^{2}}{2}+...\\
+ & =1-\frac{x}{2}+\frac{x^{2}}{8}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use the definition of Taylor series to find the Taylor polynomials of degree
+ 3 for the following functions:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sqrt{x}$
+\end_inset
+
+ about 
+\begin_inset Formula $x=4$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f^{\left(0\right)}\left(x\right)=x^{\frac{1}{2}} & f^{\left(0\right)}\left(4\right)=2\\
+f^{\left(1\right)}\left(x\right)=\frac{1}{2}x^{-\frac{1}{2}} & f^{\left(1\right)}\left(4\right)=\frac{1}{4}\\
+f^{\left(2\right)}\left(x\right)=-\frac{1}{4}x^{-\frac{3}{2}} & f^{\left(2\right)}\left(4\right)=-\frac{1}{32}\\
+f^{\left(3\right)}\left(x\right)=\frac{3}{8}x^{-\frac{5}{2}} & f^{\left(3\right)}\left(4\right)=\frac{3}{256}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =2+\frac{\frac{1}{4}}{1!}\left(x-4\right)+\left(\frac{-\frac{1}{32}}{2!}\right)\left(x-4\right)^{2}+\frac{\frac{3}{256}}{3!}\\
+ & =2+\frac{1}{4}\left(x-4\right)-\frac{1}{64}\left(x-4\right)^{2}+\frac{1}{512}\left(x-4\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{3}-10x^{2}+6$
+\end_inset
+
+ about 
+\begin_inset Formula $x=3$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\begin{cases}
+f^{\left(0\right)}\left(x\right)=x^{3}-10x^{2}+6 & f^{\left(0\right)}\left(3\right)=-57\\
+f^{\left(1\right)}\left(x\right)=3x^{2}-20x & f^{\left(1\right)}\left(3\right)=-33\\
+f^{\left(2\right)}\left(x\right)=6x-20 & f^{\left(2\right)}\left(3\right)=-2\\
+f^{\left(3\right)}\left(x\right)=6 & f^{\left(3\right)}\left(3\right)=6
+\end{cases}
+\]
+
+\end_inset
+
+ (Note: Don't draw the 
+\begin_inset Formula $\{$
+\end_inset
+
+ sign)
+\begin_inset Formula 
+\begin{align*}
+x^{3}-10x^{2}+6 & =\sum_{n=0}^{3}\frac{f^{\left(n\right)}\left(3\right)}{n!}\left(x-3\right)^{n}\\
+ & =f\left(3\right)+f'\left(3\right)\left(x-3\right)+\frac{f''\left(3\right)}{2!}\left(x-3\right)^{2}+\frac{f'''\left(3\right)}{3!}\left(x-3\right)^{3}\\
+ & =-57+-33\left(x-3\right)+\frac{-2}{2!}\left(x-3\right)^{2}+\frac{6}{3!}\left(x-3\right)^{3}\\
+x^{3}-10x^{2}+6 & =-57-33\left(x-3\right)-\left(x-3\right)^{2}+\left(x-3\right)^{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\frac{1}{x^{2}}$
+\end_inset
+
+ about 
+\begin_inset Formula $x=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\begin{cases}
+f^{0}\left(x\right)=x^{-2} & f^{0}\left(-1\right)=\left(-1\right)^{-2}=1\\
+f^{1}\left(x\right)=-2x^{-3} & f^{1}\left(-1\right)=-2\left(-1\right)^{-3}=\frac{-2}{-1}=2\\
+f^{2}\left(x\right)=-3\left(-2\right)x^{-4}=6x^{-4} & f^{2}\left(-1\right)=6\left(-1\right)^{-4}=6\\
+f^{3}\left(x\right)=\left(-4\right)6x^{-5}=-24x^{-5} & f^{3}\left(-1\right)=-24\left(-1\right)^{-5}=24
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =1+2\left(x-\left(-1\right)\right)+\frac{6}{2!}\left(x-\left(-1\right)\right)^{2}+\frac{24}{3!}\left(x-\left(-1\right)\right)^{3}\\
+ & =1+2\left(x+1\right)+3\left(x+1\right)^{2}+4\left(x+1\right)^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Use series to evaluate the following limits:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to0}\frac{1-\cos x}{1+x-e^{x}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to0}\frac{1-\cos x}{1+x-e^{x}} & \approx\lim_{x\to0}\frac{1-\left(1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}\right)}{1+x-\left(1+\frac{x}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}\right)}\\
+ & =\lim_{x\to0}\frac{\frac{x^{2}}{2!}-\frac{x^{4}}{4!}+\frac{x^{6}}{6!}}{1+x-1-x-\frac{x^{2}}{2!}-\frac{x^{3}}{3!}}\\
+ & =\lim_{x\to0}\frac{\frac{x^{2}}{2}-\frac{x^{4}}{24}+\frac{x^{6}}{720}}{-\frac{x^{2}}{2}-\frac{x^{3}}{6}}\\
+ & =\lim_{x\to0}\frac{\frac{x^{2}}{2}\left(1-\frac{x^{2}}{12}+\frac{x^{4}}{360}\right)}{\frac{x^{2}}{2}\left(-1-\frac{x}{3}\right)}\\
+ & =\lim_{x\to0}\frac{1-\frac{x^{2}}{12}+\frac{x^{4}}{360}}{-1-\frac{x}{3}}\\
+ & =\frac{1}{-1}\\
+ & =-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to0}\frac{x-\tan^{-1}x}{x^{3}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to0}\frac{x-\tan^{-1}x}{x^{3}} & =\lim_{x\to0}\frac{x-\left(x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-....\right)}{x^{3}}\\
+ & \approx\lim_{x\to0}\frac{x-x+\frac{x^{3}}{3}-\frac{x^{5}}{5}}{x^{3}}\\
+ & =\lim_{x\to0}\frac{\frac{x^{3}}{3}-\frac{x^{5}}{5}}{x^{3}}\\
+ & =\lim_{x\to0}\frac{\frac{1}{3}-\frac{x^{2}}{5}}{\frac{x^{3}}{x^{3}}}\\
+ & =\lim_{x\to0}\frac{1}{3}\\
+ & =\frac{1}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use series to approximate the following definite integral (3 decimal places):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{1}\sin\left(x^{2}\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sin x & =x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}+...\\
+\sin x^{2} & =x^{2}-\frac{x^{6}}{3!}+\frac{x^{10}}{5!}+...\\
+\int_{0}^{1}\sin x^{2}dx & =\int_{0}^{1}x^{2}-\frac{x^{6}}{3!}+\frac{x^{10}}{5!}+...\\
+ & =\left[\frac{1}{3}x^{2}-\frac{1}{42}x^{7}+\frac{1}{1320}x^{11}\right]_{0}^{1}\\
+ & =0.310
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{0.5}\cos\left(x^{2}\right)dx$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\cos x & =1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}+...\\
+\cos\left(x^{2}\right) & =1-\frac{\left(x^{2}\right)^{2}}{2!}+\frac{\left(x^{2}\right)^{4}}{4!}-\frac{\left(x^{2}\right)^{6}}{6!}+...\\
+ & =1-\frac{x^{4}}{2}+\frac{x^{8}}{24}-\frac{x^{12}}{720}+...
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{0.5}1-\frac{x^{4}}{2}+\frac{x^{8}}{24}-\frac{x^{12}}{720}+...dx & =\int_{0}^{0.5}1-\frac{x^{4}}{2}+\frac{x^{8}}{24}-\frac{x^{12}}{720}+...dx\\
+ & =\left[x-\frac{x^{5}}{10}+\frac{x^{9}}{216}-\frac{x^{13}}{9360}+...\right]_{0}^{0.5}\\
+ & \approx0.497
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Expand the following functions as a power series:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{1}{\left(1+x\right)^{4}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =1+na+\frac{n\left(n-1\right)}{2!}a^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}a^{3}+...\\
+ & =1+-4x+\frac{-4\left(-5\right)}{2!}x^{2}+\frac{-4\left(-5\right)\left(-6\right)}{3!}x^{3}+...\\
+ & =1+-4x+10x^{2}-20x^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sqrt{9-x}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sqrt{9-x} & =\sqrt{9}\left(1-\frac{x}{9}\right)^{\frac{1}{2}}\\
+ & =3\left(1-\frac{x}{9}\right)^{\frac{1}{2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =3\left(1+na+\frac{n\left(n-1\right)}{2!}a^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}a^{3}+...\right)\\
+ & =3\left(1+\frac{1}{2}\left(\frac{x}{9}\right)+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}\left(\frac{x}{9}\right)^{2}+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}\left(\frac{x}{9}\right)^{3}+...\right)\\
+ & =3\left(1+\frac{1}{18}x-\frac{1}{648}x^{2}+\frac{1}{16}\frac{x^{3}}{729}+...\right)\\
+ & =3+\frac{3}{18}x-\frac{3}{648}x^{2}+\frac{3}{16}\frac{1}{729}x^{3}+...\\
+ & =3+\frac{1}{6}x-\frac{1}{216}x^{2}+\frac{1}{3888}x^{3}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use the Binomial Theorem to expand (for natural numbers use theorem, anything
+ else use series):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(2x-3\right)^{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=0}^{4}\binom{4}{k}\left(2x\right)^{4-k}\left(-3\right)^{k} & =\binom{4}{0}\left(2x\right)^{4}\left(-3\right)^{0}+\binom{4}{1}\left(2x\right)^{3}\left(-3\right)^{1}+\binom{4}{2}\left(2x\right)^{2}\left(-3\right)^{2}\\
+ & +\binom{4}{3}\left(2x\right)^{1}\left(-3\right)^{3}+\binom{4}{4}\left(2x\right)^{0}\left(-3\right)^{4}\\
+ & =16x^{4}-96x^{3}+216x^{2}+81
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(x+\frac{1}{2x}\right)^{6}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=0}^{6}\binom{6}{k}x^{6-k}\left(\frac{1}{2x}\right)^{k} & =\binom{6}{0}x^{6}\left(\frac{1}{2x}\right)^{0}+\binom{6}{1}x^{5}\left(\frac{1}{2x}\right)^{1}+\binom{6}{2}x^{4}\left(\frac{1}{2x}\right)^{2}\\
+ & +\binom{6}{3}x^{3}\left(\frac{1}{2x}\right)^{3}+\binom{6}{4}x^{2}\left(\frac{1}{2x}\right)^{4}+\binom{6}{5}x^{1}\left(\frac{1}{2x}\right)^{5}\\
+ & +\binom{6}{6}x^{0}\left(\frac{1}{2x}\right)^{6}\\
+ & =x^{6}+3x^{4}+\frac{15}{4}x^{2}+\frac{5}{2}+\frac{15}{16x^{2}}+\frac{3}{16x^{4}}+\frac{1}{64x^{6}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(2+\frac{x}{4}\right)^{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=0}^{4}\binom{4}{k}2^{4-k}\left(\frac{x}{4}\right)^{k} & =\binom{4}{0}2^{4}\left(\frac{x}{4}\right)^{0}+\binom{4}{1}2^{3}\left(\frac{x}{4}\right)^{1}+\binom{4}{2}2^{2}\left(\frac{x}{4}\right)^{2}\\
+ & +\binom{4}{3}2^{1}\left(\frac{x}{4}\right)^{3}+\left(\frac{x}{4}\right)^{4}\\
+ & =16+12x+\frac{3}{2}x^{2}+\frac{x^{3}}{8}+\frac{x^{4}}{256}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Expand 
+\begin_inset Formula $\left(5+\sqrt{3}\right)^{4}$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(5-\sqrt{3}\right)^{4}$
+\end_inset
+
+, then find the value of 
+\begin_inset Formula $\left(5+\sqrt{3}\right)^{4}-\left(5-\sqrt{3}\right)^{4}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(5+\sqrt{3}\right)^{4} & =1\left(5\right)^{4}\left(\sqrt{3}\right)^{0}+4\left(5\right)^{3}\left(\sqrt{3}\right)^{1}+1\left(5\right)^{0}\left(\sqrt{3}\right)^{4}\\
+ & =625+500\sqrt{3}+450+60\sqrt{3}+45\\
+ & =1120+560\sqrt{3}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(5-\sqrt{3}\right)^{4} & =625-500\sqrt{3}+450-60\sqrt{3}+45\\
+ & =1120-560\sqrt{3}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(5+\sqrt{3}\right)^{4}-\left(5-\sqrt{3}\right)^{4} & =\left(1120+560\sqrt{3}\right)-\left(1120-560\sqrt{3}\right)\\
+ & =1120\sqrt{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

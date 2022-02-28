@@ -1,0 +1,721 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 3cm
+\headheight 1.5cm
+\headsep 1.5cm
+\footskip 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Chapter 8: Correlation and Regression Analysis
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e2-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Product Moment Correlation Coefficient
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{\sqrt{\left[n\sum X^{2}-\left(\sum X\right)^{2}\right]\left[n\sum Y^{2}-\left(\sum Y\right)^{2}\right]}}\\
+ & =\frac{9\left(4250\right)-\left(23\right)\left(1340\right)}{\sqrt{\left[9\cdot75-\left(23\right)^{2}\right]\left[9\cdot\left(261600\right)-\left(1340\right)^{2}\right]}}\\
+ & =0.8226
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Very strong correlation
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e3-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Product Moment Correlation Coefficient
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{9*39736.5-99\cdot3679}{\sqrt{\left[9*1104-\left(99\right)^{2}\right]\left[9*1544109-\left(3679\right)^{2}\right]}}\\
+ & =\text{−}0.9431
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The correlation coefficient of 
+\begin_inset Formula $r=-0.9431$
+\end_inset
+
+ indicates that there is a very high degree of negative correlation between
+ the weekly price and sales.
+ As the weekly price increase, the sales decrease.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e4-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Spearman's Rank Correlation Coefficient
+\begin_inset Formula 
+\[
+r_{s}=1-\frac{6*42}{10\left(100-1\right)}=0.7435
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e5-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Spearman's Rank Correlation Coefficient
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\sum d^{2}}{n\left(n^{2}-1\right)}\\
+ & =1-\frac{6\left(26\right)}{10\left(10^{2}-1\right)}\\
+ & =0.8424
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The result demonstrates relatively high positive correlation.
+ Thus, high rates tend to be paired with high rents and vice versa.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example 6
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e6-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Spearman's rank correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\sum d^{2}}{n\left(n^{2}-1\right)}\\
+ & =1-\frac{6\left(127\right)}{12\left(12^{2}-1\right)}\\
+ & =0.5559
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The results show that there is positive correlation
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e7-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calculate least square regressions line
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the gradient 
+\begin_inset Formula $\hat{b}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{5\left(8104\right)-\left(100\right)\left(400\right)}{5\left(2040\right)-\left(100\right)^{2}}\\
+\hat{b} & =2.6
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\begin_inset Formula $\hat{a}$
+\end_inset
+
+, which is the coefficient
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{400}{5}-2.6\left(\frac{100}{5}\right)\\
+\hat{a} & =28
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+Least squares regression line (
+\begin_inset Formula $\hat{Y}=\hat{a}+\hat{b}X)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\hat{Y}=2.6X+28
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8e8-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the least square regression line
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(10\right)\left(97650\right)-\left(300\right)\left(2970\right)}{\left(10\right)\left(12050\right)-\left(300\right)^{2}}\\
+ & =2.8033
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{2970}{10}-2.8033\left(\frac{300}{10}\right)\\
+ & =212.90
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =212.9+2.8033X
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When X = 40
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =212.90+2.8033\left(40\right)\\
+ & =325.032
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The estimated maintenance cost for a similar machine which is 40 months
+ old is RM325.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8q9-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Plot the data on a scatter diagram and comment briefly
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8q9-scatter.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Product moment correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{\sqrt{\left[n\sum X^{2}-\left(\sum X\right)^{2}\right]\left[n\sum Y^{2}-\left(\sum Y\right)^{2}\right]}}\\
+ & =\frac{8\left(154650\right)-\left(290\right)\left(3370\right)}{\sqrt{\left[8\left(12600\right)-\left(290\right)^{2}\right]\left[8\left(1950500\right)-\left(3370\right)^{2}\right]}}\\
+r & =0.9759
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Equation of the regression line
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(8\right)\left(154650\right)-\left(290\right)\left(3370\right)}{\left(8\right)\left(12600\right)-\left(290\right)^{2}}\\
+ & =15.5629
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{3370}{8}-\left(15.5629\right)\frac{290}{8}\\
+ & =-142.9051
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =\hat{a}+\hat{b}X\\
+ & =15.5629X-142.9051
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Estimate the total sales which had the advertising expenditure
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\$30,000$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =15.5629\left(30\right)-142.9051\\
+ & =323.9819
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Conclusion:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Total sales: 
+\begin_inset Formula $323981.9\$$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\$90,000$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =15.5629\left(90\right)-142.9051\\
+ & =323.9819\\
+ & =1257.7559
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Conclusion: Total sales = 
+\begin_inset Formula $1257.7559*1000=\$1257755.9$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Enumerate
+Table
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename lyx-img/c8q10-table.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the trend line using the method of least squares, and use the line
+ to estimate the sales of 2003
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{5\left(2617\right)-\left(10\right)\left(1055\right)}{\left(5\right)\left(30\right)^{2}-\left(10\right)^{2}}\\
+ & =0.5761
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{1055}{5}-\left(0.5761\right)\frac{\left(10\right)}{5}\\
+ & =209.8478
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Example (Obtain from lecturer)
+\end_layout
+
+\begin_layout Section
+Example
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{5\left(2617\right)-\left(10\right)\left(1055\right)}{5\left(30\right)-10^{2}}=50.7\\
+\hat{a} & =\frac{1055}{5}-50.7\left(\frac{10}{5}\right)=109.6\\
+\hat{Y} & =\hat{a}+\hat{b}X=109.6+50.7X
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To estimate, sub 
+\begin_inset Formula $X=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =109.6+50.7\left(5\right)\\
+ & =363.1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Estimated sales RM363,100
+\end_layout
+
+\begin_layout Section
+Note
+\end_layout
+
+\begin_layout Enumerate
+If in exam, better to write the calculations, and use calculator to calculate.
+ But keep calculations cause might make mistakes.
+\end_layout
+
+\begin_layout Enumerate
+As long as 
+\begin_inset Formula $\hat{b}$
+\end_inset
+
+is correct, even if 
+\begin_inset Formula $\hat{a}$
+\end_inset
+
+is wrong, your answer might not be wrong.
+ This is because it is dependent on what you put for the numbering system.
+\end_layout
+
+\end_body
+\end_document

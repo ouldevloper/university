@@ -1,0 +1,1127 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\makeatletter
+\setkeys{Gin}{width=\ifdim\Gin@nat@width>\linewidth
+  \linewidth
+\else
+  \Gin@nat@width
+\fi}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tutorial 8
+\end_layout
+
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(28\right)}{8\left(8^{2}-1\right)}\\
+ & =\frac{2}{3}\text{​}\\
+ & =0.6667
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is a high positive linear correlation between the value to the company
+ and preference of the managers.
+\end_layout
+
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(48\right)}{10\left(10^{2}-1\right)}\\
+ & =\frac{39}{55}\\
+ & =0.7091
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is a high positive linear correlation that it represents a measure
+ of agreement between the two panel members.
+\end_layout
+
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+From the scatter diagram, there is a moderate negative linear relationship
+ between the weeks of experience and the number of rejects.
+\end_layout
+
+\begin_layout Enumerate
+Product moment correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{\sqrt{\left[n\sum X^{2}-\left(\sum X\right)^{2}\right]\left[n\sum Y^{2}-\left(\sum Y\right)^{2}\right]}}\\
+ & =\frac{8\left(1069\right)-\left(72\right)\left(128\right)}{\sqrt{\left[8\left(732\right)-\left(72\right)^{2}\right]\left[8\left(2156\right)-\left(128\right)^{2}\right]}}\\
+ & =\text{−}0.8714
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+There is a very high negative linear correlation between the weeks of experience
+ and the number of rejects.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Spearman's rank correlation
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(160.5\right)}{8\left(8^{2}-1\right)}\\
+ & =-0.9107
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+There is a very high negative linear correlation between the weeks of experience
+ and the number of rejects
+\end_layout
+
+\end_deeper
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Draw and comment the scatter diagram.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation: There is a high positive linear correlation between the
+ output and the cost
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Product moment coefficient correlation
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{\sqrt{\left[n\sum X^{2}-\left(\sum X\right)^{2}\right]\left[n\sum Y^{2}-\left(\sum Y\right)^{2}\right]}}\\
+ & =\frac{10\left(5704\right)-\left(120\right)\left(400\right)}{\sqrt{\left(\left(10\right)\left(1866\right)-\left(120\right)^{2}\right)\left(\left(10\right)\left(18200\right)-\left(400\right)^{2}\right)}}\\
+ & =0.9338
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation: There is a very high positive linear correlation between
+ the output and the cost
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Spearman's rank coefficient correlation
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(8.5\right)}{10\left(10^{2}-1\right)}\\
+ & =0.9485
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation: There is a very high positive linear correlation between
+ the output and the cost
+\end_layout
+
+\end_deeper
+\begin_layout Section
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Product moment correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{\sqrt{\left[n\sum X^{2}-\left(\sum X\right)^{2}\right]\left[n\sum Y^{2}-\left(\sum Y\right)^{2}\right]}}\\
+ & =\frac{12\left(7449\right)-\left(659\right)\left(135\right)}{\sqrt{\left[\left(12\right)\left(36313\right)-\left(659\right)^{2}\right]\left[\left(12\right)\left(1561\right)-\left(135\right)^{2}\right]}}\\
+ & =0.4891
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation: There is some positive linear correlation between the median
+ income and the house purchase price
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Spearman's rank correlation coefficient
+\begin_inset Formula 
+\begin{align*}
+r_{s} & =1-\frac{6\left(192.5\right)}{12\left(12^{2}-1\right)}\\
+ & =0.3269
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Answer
+\end_layout
+
+\begin_layout Enumerate
+Least squares regression line of time on year.
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =\hat{a}+\hat{b}X
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(9\right)\left(7838.4\right)-\left(144\right)\left(496.6\right)}{\left(9\right)\left(3264\right)-\left(144\right)^{2}}\\
+ & =-0.112
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\left(496.6\right)}{144}-\left(-0.112\right)\frac{144}{9}\\
+ & =5.241
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =5.241-0.112X
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Predict winning time for year 2012.
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =-0.1117*56.964*40\\
+ & =52.50seconds
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Answer
+\end_layout
+
+\begin_layout Enumerate
+Least square regressions line
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =\hat{a}+\hat{b}X
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(7\right)\left(2273\right)-\left(21\right)\left(641\right)}{\left(7\right)\left(91\right)-\left(21\right)^{2}}\\
+ & =12.5
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{641}{7}-12.5\frac{21}{7}\\
+ & =54.0714
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{Y}=54.0714+12.5X
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Predict average annual earnings for year 2011 and 2012.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+2011
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2011-2004=7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =54.0714+12.5\left(7\right)\\
+ & =141.5714
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+2012
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2012-2004=8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =54.0714+12.5\left(8\right)\\
+ & =154.0714
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Answer
+\end_layout
+
+\begin_layout Standard
+A random sample of eight drivers insured with a company and having similar
+ car insurance policies was selected.
+ The following table lists their driving experiences and monthly car insurance
+ premiums.
+\end_layout
+
+\begin_layout Standard
+(a) Does the insurance premium depend on the driving experience or does
+ the driving experience
+\end_layout
+
+\begin_layout Standard
+depend on the insurance premium? State the dependent and independent variables.
+\end_layout
+
+\begin_layout Standard
+The insurance premium depends on the driving experience.
+\end_layout
+
+\begin_layout Standard
+In statistics: Y depends on X.
+\end_layout
+
+\begin_layout Standard
+Y: Insurance premium (dependent variable)
+\end_layout
+
+\begin_layout Standard
+X: Driving experience (Independent variable)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Driving Experience
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Insurance Premium
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+474
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XY
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4739
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1396
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29642
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) Draw and comment the scatter diagram.
+ 
+\end_layout
+
+\begin_layout Standard
+Note: Can start from lowest to highest, no need to start from zero
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../lyx-imgs/t8q8-scatter.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the scatter diagram, there is a moderate negative linear relationship
+ between driving experience and monthly premium.
+ (Note: The relationship must be 3 parts, intensity + positive/negative
+ + linear, which one come first doesn't matter) 
+\end_layout
+
+\begin_layout Standard
+(c) Find the appropriate least squares regression line based on your answer
+ in part (a).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S_{XY} & =\sum xy-\frac{\sum x\sum y}{n}=4739-\frac{90\left(474\right)}{8}\\
+ & =
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S_{XX} & =\sum X^{2}-\frac{\left(\sum X\right)^{2}}{n}=1396-\frac{90^{2}}{8}\\
+ & =383.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S_{XY} & =\sum y^{2}-\frac{\left(\sum y\right)^{2}}{n}\\
+ & =29642-\frac{474^{2}}{8}\\
+ & =1557.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{b}\left(gradient,\frac{y_{a}-y_{b}}{x_{a}-x_{b}}\right) & =\frac{S_{X\boldsymbol{Y}}}{S_{X\boldsymbol{X}}}\\
+ & =-\frac{593.5}{383.5}\\
+ & =-1.5476
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\bar{y}-\hat{b}X\\
+ & =\frac{474}{8}+1.5476\left(\frac{90}{8}\right)\\
+ & =76.6605
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{y}=76.6605-1.5476x\text{(When X=0, \ensuremath{\hat{y}=\hat{a}}) }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(d) Interpret the meaning of the values of regression coefficients a and
+ b obtained in part (c).
+ 
+\end_layout
+
+\begin_layout Standard
+For a driver with no experience, the predicted monthly premium is RM76.66.
+\end_layout
+
+\begin_layout Standard
+(General format: When X increases by 1 unit, Y is expected to change by
+ 
+\begin_inset Formula $\hat{b}$
+\end_inset
+
+ units, on the average)
+\end_layout
+
+\begin_layout Standard
+When the driving experience increases by 1 year, the monthly premium is
+ expected to decrease by RM1.55 on average)
+\end_layout
+
+\begin_layout Standard
+(e) Calculate and interpret the correlation coefficient between the two
+ variables.
+ 
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{S_{XY}}{\sqrt{S_{XX}}\sqrt{S_{YY}}}\\
+ & =\frac{-593.5}{\sqrt{383.5}\sqrt{1557.5}}\\
+ & =-0.7679
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(Note: Look at notes page 81 table, notes, and decide it is from where to
+ where)
+\end_layout
+
+\begin_layout Standard
+There is a high negative linear correlation(proper)/relationship between
+ driving experience and monthly premium
+\end_layout
+
+\begin_layout Standard
+(f) Calculate and interpret the coefficient of determination.
+ 
+\begin_inset Formula 
+\begin{align*}
+r^{2} & =\left(-0.7659\right)\\
+ & =0.5879
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+58.97% of the total variance in monthly premium is explained by the driving
+ experience (Generally, the higher the better).
+\end_layout
+
+\begin_layout Standard
+(g) Predict the monthly car insurance premium for a driver with 10 years
+ of driving experience.
+ 
+\end_layout
+
+\begin_layout Standard
+When X = 10,
+\begin_inset Formula 
+\begin{align*}
+\hat{y} & =76.6605-1.5476\left(10\right)\\
+ & =61.1845
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The predicted monthly premium monthly premium is RM61.18.
+\end_layout
+
+\begin_layout Standard
+(h) Predict the monthly car insurance premium for a driver with 30 years
+ of driving experience.
+ 
+\end_layout
+
+\begin_layout Standard
+When X = 30,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{y} & =76.6605-1.5476\left(30\right)\\
+ & =30.2325
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The predicted monthly premium monthly premium is RM
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+30.2325
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+(i) Comment on the accuracy of your estimates obtained in parts (g) and
+ (h).
+\end_layout
+
+\begin_layout Standard
+The accuracy of estimates in part g is more accurate than h.
+ This is because part g is interpolation and part h is extrapolation.
+ g is inside the range of the samples, while h is outside the range of samples,
+ which is less accurate.
+\end_layout
+
+\begin_layout Section
+Answer (Check with teacher)
+\end_layout
+
+\begin_layout Enumerate
+State the dependent and independent variables.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dependent: Cholesterol level
+\end_layout
+
+\begin_layout Enumerate
+Independent: Age
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the least squares regression line of cholesterol level on age.
+ 
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =\hat{a}+\hat{b}X
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{b} & =\frac{n\sum XY-\left(\sum X\right)\left(\sum Y\right)}{n\sum X^{2}-\left(\sum X\right)^{2}}\\
+ & =\frac{\left(10\right)\left(39531\right)-\left(202\right)\left(1896\right)}{\left(10\right)\left(5976\right)-\left(202\right)^{2}}\\
+ & =0.6498
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{a} & =\frac{\sum Y}{n}-\hat{b}\frac{\sum X}{n}\\
+ & =\frac{1896}{10}-0.6498\frac{202}{10}\\
+ & =176.474
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{Y}=176.474+0.6498X
+\]
+
+\end_inset
+
+(Note: the answer for 9b is wrong, as you cannot get 9e answer using 9b's
+ equation given in the answer)
+\end_layout
+
+\begin_layout Enumerate
+Interpret the meaning of the values of regression coefficients a and b obtained
+ in part (b).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For a men with an age of 58, the cholesterol level is 176.47
+\end_layout
+
+\begin_layout Enumerate
+As the age of the men increase by 1, the cholesterol level increases by
+ 0.6498.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calculate and interpret the correlation coefficient between the two variables.
+ 
+\begin_inset Formula 
+\begin{align*}
+r & =\frac{S_{XY}}{\sqrt{S_{X^{2}}}\sqrt{S_{Y^{2}}}}\\
+ & =\frac{\left(395310-382992\right)}{\sqrt{\left[59760-40804\right]\left[3642800-3594816\right]}}\\
+ & =0.4084
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+There is a some positive linear correlation between the age and the cholesterol
+ level of men.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Calculate and interpret the coefficient of determination.
+ 
+\begin_inset Formula 
+\begin{align*}
+r^{2} & =\left(0.8473\right)^{2}\\
+ & =0.7179
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interpretation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $71.79\%$
+\end_inset
+
+ of the total variance is explained by the age.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Predict the cholesterol level of a 60-year-old man.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $X=60-31=29$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\hat{Y} & =176.474+0.6498\left(29\right)\\
+ & =195.3182
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
